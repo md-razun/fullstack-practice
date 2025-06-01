@@ -2,6 +2,10 @@
 
 This repository is set up for practicing fullstack development skills.
 
+## Repository Status
+
+✅ **Fullstack Practice Repository Created** - The repository has been successfully set up with all necessary components for a full-stack application including authentication, user profiles, and more.
+
 ## Project Structure
 
 - `/frontend` - Contains the client-side code
@@ -19,6 +23,15 @@ This repository is set up for practicing fullstack development skills.
 - Node.js
 - Express.js
 - MongoDB
+
+## Features Implemented
+
+- User authentication (register, login, logout)
+- Profile creation and management
+- Experience and education tracking
+- Secure API with protected routes
+- Form validation
+- Responsive UI
 
 ## Getting Started
 
