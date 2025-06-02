@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title> <!-- Title will be updated by JS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="post-title-header">Blog Post</h1> <!-- Title will be updated by JS -->
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/blog.html">Back to Blog</a>
+    </nav>
+    <div class="container">
+        <article id="post-detail">
+            <!-- Post content will be loaded here by JavaScript -->
+            <p>Loading post...</p>
+        </article>
+        
+        <!-- Basic Comment Section Placeholder -->
+        <section id="comments-section">
+            <h2>Comments</h2>
+            
+            <!-- Add Comment Form -->
+            <!-- TODO: Show this form only if user is authenticated -->
+            <form id="comment-form">
+                <h3>Leave a Comment</h3>
+                <div class="form-group">
+                    <label for="comment-content">Your Comment:</label>
+                    <textarea id="comment-content" name="content" rows="3" required></textarea>
+                </div>
+                <button type="submit" id="submit-comment-button">Submit Comment</button>
+                <div id="comment-form-feedback" style="display:none; margin-top:10px;"></div>
+            </form>
+            <hr>
+
+            <div id="comments-list-container">
+                <h3>All Comments</h3>
+                <div id="comments-list">
+                    <!-- Comments will be loaded here by JavaScript -->
+                    <p>Loading comments...</p>
+                </div>
+                <div class="pagination" id="comments-pagination-controls">
+                    <!-- Pagination for comments -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Vote Section for the Post -->
+        <section id="post-vote-section">
+             <h3>Vote on this Post</h3>
+             <!-- TODO: Disable buttons if user not authenticated -->
+             <button id="like-post-button" data-vote-type="like">Like</button>
+             <span id="post-likes-count">0</span> Likes
+             <button id="dislike-post-button" data-vote-type="dislike">Dislike</button>
+             <span id="post-dislikes-count">0</span> Dislikes
+             <p id="post-vote-feedback" style="display:none; margin-top:10px;"></p>
+        </section>
+        <hr>
+
+    </div>
+
+    <script src="/js/post.js"></script>
+</body>
+</html>
