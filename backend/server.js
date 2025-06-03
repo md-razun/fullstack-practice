@@ -18,7 +18,7 @@ app.use(morgan('dev'));
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
-app.use('/api/profile', require('./routes/profile'));
+app.use('/api/profile', require('./routes/profiles'));
 
 // Default route
 app.get('/', (req, res) => {
