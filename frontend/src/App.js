@@ -4,7 +4,8 @@ import './App.css';
 
 // Components
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Home from './pages/Home'; // Will keep for now, might be reused
+import BlogPage from './pages/BlogPage';
 import About from './pages/About';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
@@ -17,7 +18,7 @@ function App() {
       <Navbar />
       <main className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<BlogPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
