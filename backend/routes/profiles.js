@@ -19,9 +19,7 @@ router.route('/').get(getProfiles).post(protect, createProfile);
 
 router.route('/me').get(protect, getMyProfile);
 
-router.route('/:id').get(getProfile);
-
-router.route('/').delete(protect, deleteProfile);
+router.route('/:id').get(getProfile).delete(protect, deleteProfile);
 
 router.route('/experience').put(protect, addExperience);
 
